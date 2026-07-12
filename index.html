@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="KeyTrain cybersecurity platform presentation and product overview.">
+  <meta name="theme-color" content="#0a1224">
+  <title>KeyTrain | Keyed for Defense. Trained to Serve.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand" href="#hero" aria-label="KeyTrain home">
+        <img src="assets/keytrain-logo.png" alt="KeyTrain">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Open menu</span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#challenge">Challenge</a>
+        <a href="#reality">Reality</a>
+        <a href="#solution">Solution</a>
+        <a href="#architecture">How it works</a>
+        <a href="#churches">Churches</a>
+        <a href="#roadmap">Roadmap</a>
+      </div>
+      <button class="present-button" id="present-button" type="button" title="Use arrow keys to move between sections">
+        Present
+      </button>
+    </nav>
+    <div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
+  </header>
+
+  <main id="main">
+    <section class="hero section section-dark" id="hero" data-section="Home">
+      <div class="hero-grid shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="pulse-dot"></span> AI-powered cybersecurity made understandable</p>
+          <h1>Keyed for defense.<br><span>Trained to serve.</span></h1>
+          <p class="hero-lead">
+            KeyTrain brings monitoring, reporting, global threat intelligence, and targeted training together in one clear platform—without enterprise complexity.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#solution">Explore KeyTrain</a>
+            <a class="button button-secondary" href="#architecture">See how it works</a>
+          </div>
+          <div class="hero-trust" aria-label="Key benefits">
+            <span>Plain-English reporting</span>
+            <span>Human + technical risk</span>
+            <span>RailNet intelligence</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Animated KeyTrain platform overview">
+          <div class="dashboard-frame">
+            <div class="window-bar">
+              <span></span><span></span><span></span>
+              <small>KEYTRAIN SECURITY OVERVIEW</small>
+            </div>
+            <div class="dashboard-grid">
+              <article class="health-card">
+                <p>Security health</p>
+                <div class="score-ring" data-score="87">
+                  <strong>87</strong><span>/100</span>
+                </div>
+                <small>Strong posture</small>
+              </article>
+              <article class="metric-card">
+                <span class="metric-icon shield">✓</span>
+                <div><strong>128</strong><small>Threats analyzed</small></div>
+              </article>
+              <article class="metric-card">
+                <span class="metric-icon rail">⇄</span>
+                <div><strong>Live</strong><small>RailNet connected</small></div>
+              </article>
+              <article class="activity-card">
+                <div class="card-heading"><span>Risk trend</span><small>30 days</small></div>
+                <svg viewBox="0 0 420 130" role="img" aria-label="Declining risk trend chart">
+                  <defs>
+                    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#2f80ed" stop-opacity=".42"/>
+                      <stop offset="100%" stop-color="#2f80ed" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                  <path class="grid-line" d="M0 25H420M0 65H420M0 105H420"/>
+                  <path class="area-line" d="M0,38 C40,52 55,22 92,45 S150,72 184,54 S245,88 278,63 S340,76 420,96 L420,130 L0,130Z"/>
+                  <path class="trend-line" d="M0,38 C40,52 55,22 92,45 S150,72 184,54 S245,88 278,63 S340,76 420,96"/>
+                </svg>
+              </article>
+              <article class="alert-card">
+                <div class="card-heading"><span>Latest intelligence</span><span class="status-pill">Protected</span></div>
+                <ul>
+                  <li><span class="event-dot normal"></span><div><strong>Global signature update</strong><small>Applied across protected hosts</small></div><time>Now</time></li>
+                  <li><span class="event-dot warn"></span><div><strong>Suspicious email pattern</strong><small>Training recommendation created</small></div><time>4m</time></li>
+                  <li><span class="event-dot normal"></span><div><strong>System hygiene improved</strong><small>Critical patch confirmed</small></div><time>12m</time></li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#challenge" aria-label="Scroll to the challenge"><span></span></a>
+    </section>
+
+    <section class="section section-light" id="challenge" data-section="Challenge">
+      <div class="shell split">
+        <div class="section-heading reveal">
+          <p class="eyebrow">The challenge</p>
+          <h2>Strong security should not require a large budget or a security operations center.</h2>
+          <p>Small organizations face the same evolving threats as enterprises, but usually with fewer people, fewer tools, and less time.</p>
+        </div>
+        <div class="feature-stack">
+          <article class="feature-card reveal">
+            <span class="feature-number">01</span>
+            <div>
+              <h3>Enterprise cost</h3>
+              <p>Traditional cybersecurity platforms are often priced and packaged for large organizations.</p>
+            </div>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-number">02</span>
+            <div>
+              <h3>Expert-only tools</h3>
+              <p>Complex dashboards and alerts make it hard for everyday users to know what matters.</p>
+            </div>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-number">03</span>
+            <div>
+              <h3>Growing complexity</h3>
+              <p>Threats, regulations, and technology change faster than many teams can respond.</p>
+            </div>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-number">04</span>
+            <div>
+              <h3>Limited staff</h3>
+              <p>Many organizations do not have a dedicated cybersecurity professional on staff.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-blue" id="reality" data-section="Reality">
+      <div class="shell">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">The reality</p>
+          <h2>Cybercrime losses continue to climb.</h2>
+          <p>Reported losses have increased sharply while phishing remains one of the most frequently reported forms of cybercrime.</p>
+        </div>
+
+        <div class="stat-grid">
+          <article class="stat-card reveal">
+            <strong data-counter="20.8" data-decimals="1" data-prefix="$" data-suffix="B">0</strong>
+            <span>Reported cybercrime losses in 2025</span>
+          </article>
+          <article class="stat-card reveal">
+            <strong data-counter="5" data-prefix="$" data-suffix="B">0</strong>
+            <span>Reported losses involving adults age 60+</span>
+          </article>
+          <article class="stat-card reveal">
+            <strong data-counter="3" data-suffix="×">0</strong>
+            <span>Approximate increase in reported losses since 2021</span>
+          </article>
+          <article class="stat-card reveal">
+            <strong data-counter="1" data-prefix="#">0</strong>
+            <span>Phishing ranking among reported cybercrimes</span>
+          </article>
+        </div>
+
+        <div class="chart-panel reveal">
+          <div class="chart-copy">
+            <p class="eyebrow">Reported losses</p>
+            <h3>A clear upward trend</h3>
+            <p>Billions of dollars, using the figures supplied in the presentation.</p>
+            <div class="chart-callout"><strong>$25–27B</strong><span>2026 pace shown in the source presentation</span></div>
+          </div>
+          <div class="bar-chart" role="img" aria-label="Cybercrime losses chart: 2022 10.3 billion, 2023 12.5 billion, 2024 16.6 billion, 2025 20.8 billion, and 2026 pace 25 to 27 billion">
+            <div class="bar-item"><span class="bar-value">$10.3B</span><div class="bar" style="--height:38%"></div><small>2022</small></div>
+            <div class="bar-item"><span class="bar-value">$12.5B</span><div class="bar" style="--height:46%"></div><small>2023</small></div>
+            <div class="bar-item"><span class="bar-value">$16.6B</span><div class="bar" style="--height:61%"></div><small>2024</small></div>
+            <div class="bar-item"><span class="bar-value">$20.8B</span><div class="bar" style="--height:77%"></div><small>2025</small></div>
+            <div class="bar-item projected"><span class="bar-value">$25–27B</span><div class="bar" style="--height:100%"></div><small>2026 pace</small></div>
+          </div>
+        </div>
+        <p class="source-note">Statistics and projections are reproduced from the supplied KeyTrain presentation and should be verified against the latest FBI Internet Crime Report before external publication.</p>
+      </div>
+    </section>
+
+    <section class="section section-light" id="problem" data-section="Problem">
+      <div class="shell">
+        <div class="problem-panel reveal">
+          <div class="problem-copy">
+            <p class="eyebrow">The problem</p>
+            <h2>Protection, insight, and training are often disconnected.</h2>
+            <p>Organizations need enterprise-level protection, but they do not have enterprise-level budgets or specialized cybersecurity expertise.</p>
+          </div>
+          <div class="problem-orbit" aria-hidden="true">
+            <div class="orbit-center">Organization</div>
+            <span style="--angle:0deg">Technical tools</span>
+            <span style="--angle:90deg">Training</span>
+            <span style="--angle:180deg">Compliance</span>
+            <span style="--angle:270deg">Reporting</span>
+          </div>
+        </div>
+        <div class="problem-list">
+          <p class="reveal"><span>01</span>Security tools are too technical.</p>
+          <p class="reveal"><span>02</span>Threats evolve faster than organizations can respond.</p>
+          <p class="reveal"><span>03</span>Compliance expectations continue to grow.</p>
+          <p class="reveal"><span>04</span>Training is rarely connected to the risks users actually face.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark solution" id="solution" data-section="Solution">
+      <div class="shell">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">The solution</p>
+          <h2>Cybersecurity clarity without sacrificing depth.</h2>
+          <p>KeyTrain combines a straightforward experience with AI-driven analysis, technical indicators, and human-risk insight.</p>
+        </div>
+
+        <div class="solution-grid">
+          <article class="solution-card featured reveal">
+            <div class="solution-icon">KT</div>
+            <h3>KeyTrain KeUTM</h3>
+            <p>An easy-to-use Unified Threat Management platform that analyzes indicators of compromise, system hygiene, endpoint activity, network behavior, and training results.</p>
+            <ul class="check-list">
+              <li>Clear security health and risk scores</li>
+              <li>Plain-English explanations</li>
+              <li>Meaningful, prioritized reporting</li>
+            </ul>
+          </article>
+          <article class="solution-card reveal">
+            <div class="solution-icon">AI</div>
+            <h3>AI-powered analysis</h3>
+            <p>Trend analysis helps translate raw security activity into useful context and recommended action.</p>
+          </article>
+          <article class="solution-card reveal">
+            <div class="solution-icon">RN</div>
+            <h3>RailNet intelligence</h3>
+            <p>A shared threat intelligence network helps participating organizations benefit from new patterns observed across the network.</p>
+          </article>
+          <article class="solution-card reveal">
+            <div class="solution-icon">KTL</div>
+            <h3>Targeted learning</h3>
+            <p>Training can be recommended or assigned based on weak areas revealed by security events and organizational trends.</p>
+          </article>
+          <article class="solution-card reveal">
+            <div class="solution-icon">RP</div>
+            <h3>Actionable reporting</h3>
+            <p>Trends, monthly reports, compliance reporting, and risk summaries are designed for nontechnical decision-makers.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section architecture" id="architecture" data-section="How it works">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">How KeyTrain and RailNet work</p>
+          <h2>Local insight. Shared intelligence. Stronger protection.</h2>
+          <p>Multiple hosts within each organization contribute security telemetry to a shared intelligence layer. Updated intelligence, recommendations, and reports flow back through KeyTrain.</p>
+        </div>
+
+        <div class="flow-demo reveal" aria-label="High-level KeyTrain data flow">
+          <div class="org-column">
+            <article class="org-card org-a">
+              <div class="org-title"><span>A</span><div><strong>Organization A</strong><small>Multiple protected hosts</small></div></div>
+              <div class="host-row"><i>PC</i><i>Laptop</i><i>Server</i><i>Virtual</i></div>
+            </article>
+            <article class="org-card org-b">
+              <div class="org-title"><span>B</span><div><strong>Organization B</strong><small>Multiple protected hosts</small></div></div>
+              <div class="host-row"><i>PC</i><i>Laptop</i><i>Server</i><i>Virtual</i></div>
+            </article>
+          </div>
+
+          <div class="flow-lines left-lines" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+
+          <article class="railnet-core">
+            <div class="core-ring ring-one"></div>
+            <div class="core-ring ring-two"></div>
+            <div class="core-content">
+              <small>GLOBAL INTELLIGENCE</small>
+              <strong>RailNet</strong>
+              <span>AI analysis</span>
+              <span>Signatures</span>
+              <span>Trends</span>
+            </div>
+          </article>
+
+          <div class="flow-lines right-lines" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+
+          <div class="outcome-column">
+            <article><span>01</span><div><strong>Stronger intelligence</strong><small>Learn from patterns across protected organizations</small></div></article>
+            <article><span>02</span><div><strong>Smarter detection</strong><small>Apply updated indicators and trends</small></div></article>
+            <article><span>03</span><div><strong>Targeted training</strong><small>Address the domains that need attention</small></div></article>
+          </div>
+        </div>
+
+        <div class="portal-strip reveal">
+          <div>
+            <p class="eyebrow">KeyTrainLearning.com</p>
+            <h3>One portal for intelligence, reports, trends, and learning.</h3>
+          </div>
+          <div class="portal-items">
+            <span>Monthly reports</span><span>Compliance reports</span><span>Organization trends</span><span>Training requests</span>
+          </div>
+        </div>
+
+        <details class="original-diagram reveal">
+          <summary>View the original presentation diagrams</summary>
+          <div class="diagram-grid">
+            <figure><img src="assets/keytrain-data-flow.png" alt="Original KeyTrain high-level data flow diagram"><figcaption>High-level data flow</figcaption></figure>
+            <figure><img src="assets/railnet-overview.png" alt="Original RailNet architecture diagram"><figcaption>RailNet overview</figcaption></figure>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section section-light churches" id="churches" data-section="Churches">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Applicability to churches</p>
+          <h2>Mission-driven organizations still manage valuable data and real financial risk.</h2>
+          <p>Churches depend heavily on email, cloud services, volunteers, and lean administrative teams—making practical security and training especially important.</p>
+        </div>
+
+        <div class="church-grid">
+          <div class="why-card reveal">
+            <h3>Why churches are targeted</h3>
+            <ul class="check-list dark-checks">
+              <li>Sensitive member and donor information</li>
+              <li>Financial and payment data</li>
+              <li>Limited cybersecurity resources</li>
+              <li>Heavy reliance on email and cloud platforms</li>
+              <li>Volunteers and small IT teams</li>
+            </ul>
+          </div>
+          <div class="incident-timeline">
+            <article class="incident reveal">
+              <time>May 2026</time><div><h3>First United Methodist Church</h3><p>The source presentation describes a ransomware incident involving alleged disclosure of staff, parishioner, and student data.</p></div>
+            </article>
+            <article class="incident reveal">
+              <time>Oct. 2025</time><div><h3>Methodist Church of Southern Africa</h3><p>The source presentation describes a ransomware claim involving financial and audit records.</p></div>
+            </article>
+            <article class="incident reveal">
+              <time>2023</time><div><h3>Florida Baptist Convention</h3><p>The source presentation cites a business email compromise loss exceeding $700,000.</p></div>
+            </article>
+            <article class="incident reveal">
+              <time>2023</time><div><h3>North Carolina church</h3><p>The source presentation cites a payment-instruction spoofing incident involving approximately $793,000.</p></div>
+            </article>
+          </div>
+        </div>
+        <p class="source-note">Incident summaries are based on the supplied presentation. Verify names, dates, figures, and attribution before public use.</p>
+      </div>
+    </section>
+
+    <section class="section meeting" id="meeting" data-section="Meeting">
+      <div class="shell meeting-grid">
+        <div class="meeting-copy reveal">
+          <p class="eyebrow">Meeting with a Methodist church</p>
+          <h2>Turn the conversation into a useful security discussion.</h2>
+          <p>Use this section during the meeting to capture needs, priorities, and next steps without interrupting the presentation flow.</p>
+          <div class="question-chips">
+            <span>Who manages technology?</span>
+            <span>How is donor data protected?</span>
+            <span>What happens after a suspicious email?</span>
+            <span>Are staff and volunteers trained?</span>
+          </div>
+        </div>
+        <div class="notes-card reveal">
+          <div class="notes-head"><strong>Meeting notes</strong><button type="button" id="clear-notes">Clear</button></div>
+          <textarea id="meeting-notes" aria-label="Meeting notes" placeholder="Type notes here during the conversation. Notes are saved in this browser only."></textarea>
+          <small>Saved locally on this device.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark contracting" id="contracting" data-section="Government contracting">
+      <div class="shell">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">Government contracting</p>
+          <h2>Build the foundation, then pursue work relationally.</h2>
+        </div>
+        <div class="contract-steps">
+          <article class="reveal"><span>01</span><h3>Register the business</h3><p>Maintain the legal entity, EIN, registrations, and core company records.</p></article>
+          <article class="reveal"><span>02</span><h3>Register in SAM.gov</h3><p>Create and maintain the federal contractor profile needed for eligibility.</p></article>
+          <article class="reveal"><span>03</span><h3>Confirm identifiers</h3><p>Keep the UEI active and select NAICS codes aligned to the services offered.</p></article>
+          <article class="reveal"><span>04</span><h3>Prepare capabilities</h3><p>Develop a concise capabilities statement with services, differentiators, and contact information.</p></article>
+          <article class="reveal"><span>05</span><h3>Support accounting</h3><p>Use appropriate accounting and timekeeping processes for the contract environment.</p></article>
+          <article class="reveal"><span>06</span><h3>Pursue relationships</h3><p>Build trust with agencies, primes, partners, and local contracting communities.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light roadmap" id="roadmap" data-section="Roadmap">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Milestones</p>
+          <h2>Show progress and make the next target visible.</h2>
+          <p>This roadmap replaces the presentation placeholders with a simple, editable structure.</p>
+        </div>
+
+        <div class="roadmap-track reveal">
+          <div class="road-line"><span></span></div>
+          <article class="road-item complete"><span>Q3 2026</span><strong>Demo foundation</strong><p>Refine product story, diagrams, and web demonstration.</p></article>
+          <article class="road-item active"><span>Q4 2026</span><strong>Market readiness</strong><p>Finalize pricing, sales materials, and initial pilot process.</p></article>
+          <article class="road-item"><span>Jan. 2027</span><strong>Launch milestone</strong><p>Begin structured customer outreach and pilot onboarding.</p></article>
+          <article class="road-item"><span>Nov. 2027</span><strong>Growth target</strong><p>200 KeyTrain users and 250 KeyTrain Learning users.</p></article>
+        </div>
+
+        <div class="goal-panel reveal">
+          <div><strong>200</strong><span>KeyTrain users</span></div>
+          <div><strong>250</strong><span>KTL users</span></div>
+          <div class="goal-copy"><h3>2027 growth objective</h3><p>Use these numbers as editable demonstration targets until the final operating plan is approved.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-blue action" id="action" data-section="Action items">
+      <div class="shell action-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Action items</p>
+          <h2>Move from presentation to a focused next step.</h2>
+          <p>Use the close to confirm what the audience understood, address concerns, and agree on a concrete follow-up.</p>
+        </div>
+        <div class="action-list">
+          <article class="reveal"><span>1</span><div><h3>Confirm the primary risk</h3><p>Identify the most important technology, training, or reporting concern.</p></div></article>
+          <article class="reveal"><span>2</span><div><h3>Choose the right demonstration</h3><p>Show the KeyTrain experience that directly addresses that concern.</p></div></article>
+          <article class="reveal"><span>3</span><div><h3>Agree on a next meeting</h3><p>Schedule a technical review, pilot discussion, or stakeholder demonstration.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section closing section-dark" id="contact" data-section="Close">
+      <div class="shell closing-card reveal">
+        <img src="assets/keytrain-logo.png" alt="KeyTrain">
+        <p class="eyebrow">Keyed for defense. Trained to serve.</p>
+        <h2>Practical cybersecurity for organizations that need clarity, not complexity.</h2>
+        <div class="hero-actions">
+          <a class="button button-primary" href="mailto:hr@keytrainsecure.com">Contact KeyTrain</a>
+          <a class="button button-secondary" href="#hero">Return to the beginning</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell">
+      <span>© <span id="year"></span> KeyTrain LLC</span>
+      <span>Static demonstration site</span>
+    </div>
+  </footer>
+
+  <div class="present-hud" id="present-hud" aria-live="polite">
+    <span id="present-label">Home</span>
+    <span>← → or ↑ ↓ to navigate · Esc to exit</span>
+  </div>
+</body>
+</html>

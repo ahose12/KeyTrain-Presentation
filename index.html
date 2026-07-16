@@ -264,73 +264,382 @@
       </div>
     </section>
 
-    <section class="section architecture" id="architecture" data-section="How it works">
+    <section class="section architecture" id="architecture" data-section="How It Works">
       <div class="shell">
-        <div class="section-heading reveal">
-          <p class="eyebrow">How KeyTrain and RailNet work</p>
-          <h2>Local insight. Shared intelligence. Stronger protection.</h2>
-          <p>Multiple hosts within each organization contribute security telemetry to a shared intelligence layer. Updated intelligence, recommendations, and reports flow back through KeyTrain.</p>
+    
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">Platform Demonstration</p>
+    
+          <h2>See KeyTrain and RailNet in action.</h2>
+    
+          <p>
+            KeyTrain monitors activity locally, identifies security risks,
+            improves system hygiene, delivers targeted questions, and exchanges
+            approved threat intelligence through RailNet.
+          </p>
         </div>
-
-        <div class="flow-demo reveal" aria-label="High-level KeyTrain data flow">
-          <div class="org-column">
-            <article class="org-card org-a">
-              <div class="org-title"><span>A</span><div><strong>Organization A</strong><small>Multiple protected hosts</small></div></div>
-              <div class="host-row"><i>PC</i><i>Laptop</i><i>Server</i><i>Virtual</i></div>
-            </article>
-            <article class="org-card org-b">
-              <div class="org-title"><span>B</span><div><strong>Organization B</strong><small>Multiple protected hosts</small></div></div>
-              <div class="host-row"><i>PC</i><i>Laptop</i><i>Server</i><i>Virtual</i></div>
-            </article>
-          </div>
-
-          <div class="flow-lines left-lines" aria-hidden="true">
-            <span></span><span></span><span></span>
-          </div>
-
-          <article class="railnet-core">
-            <div class="core-ring ring-one"></div>
-            <div class="core-ring ring-two"></div>
-            <div class="core-content">
-              <small>GLOBAL INTELLIGENCE</small>
-              <strong>RailNet</strong>
-              <span>AI analysis</span>
-              <span>Signatures</span>
-              <span>Trends</span>
+    
+        <!-- HIGH-LEVEL WORKFLOW -->
+    
+        <div class="architecture-workflow reveal">
+    
+          <article class="workflow-card">
+            <span class="workflow-number">01</span>
+    
+            <div>
+              <h3>Detect Locally</h3>
+    
+              <p>
+                KeyTrain monitors endpoint, network, email, patch, and system
+                activity directly on the protected device.
+              </p>
             </div>
           </article>
-
-          <div class="flow-lines right-lines" aria-hidden="true">
-            <span></span><span></span><span></span>
+    
+          <div class="workflow-arrow" aria-hidden="true">
+            <span></span>
           </div>
-
-          <div class="outcome-column">
-            <article><span>01</span><div><strong>Stronger intelligence</strong><small>Learn from patterns across protected organizations</small></div></article>
-            <article><span>02</span><div><strong>Smarter detection</strong><small>Apply updated indicators and trends</small></div></article>
-            <article><span>03</span><div><strong>Targeted training</strong><small>Address the domains that need attention</small></div></article>
+    
+          <article class="workflow-card workflow-highlight">
+            <span class="workflow-number">02</span>
+    
+            <div>
+              <h3>Push to RailNet</h3>
+    
+              <p>
+                Host reports and newly detected indicators are securely uploaded
+                for organization-level analysis and approval.
+              </p>
+            </div>
+          </article>
+    
+          <div class="workflow-arrow" aria-hidden="true">
+            <span></span>
           </div>
+    
+          <article class="workflow-card">
+            <span class="workflow-number">03</span>
+    
+            <div>
+              <h3>Pull Intelligence</h3>
+    
+              <p>
+                Approved signatures and updated detection intelligence are pulled
+                back to participating KeyTrain hosts.
+              </p>
+            </div>
+          </article>
+    
         </div>
-
-        <div class="portal-strip reveal">
-          <div>
-            <p class="eyebrow">KeyTrainLearning.com</p>
-            <h3>One portal for intelligence, reports, trends, and learning.</h3>
+    
+    
+        <!-- DEMO 1: PATCH MANAGEMENT -->
+    
+        <article class="demo-feature reveal">
+    
+          <div class="demo-feature-copy">
+    
+            <p class="demo-label">Vulnerability Management</p>
+    
+            <h3>Patch Management and CVE Detection</h3>
+    
+            <p>
+              KeyTrain inventories installed software, checks for known
+              vulnerabilities, identifies available updates, and detects outdated
+              application versions.
+            </p>
+    
+            <ul class="demo-check-list">
+              <li>Installed software discovery</li>
+              <li>Confirmed and unconfirmed CVE findings</li>
+              <li>Available update detection</li>
+              <li>Old-version identification</li>
+              <li>Guided remediation actions</li>
+            </ul>
+    
           </div>
-          <div class="portal-items">
-            <span>Monthly reports</span><span>Compliance reports</span><span>Organization trends</span><span>Training requests</span>
+    
+          <div class="demo-image-stack">
+    
+            <figure class="demo-image-primary">
+              <img
+                src="assets/demo/patch-scan-results.png"
+                alt="KeyTrain patch-management scan results showing CVEs, updates, and old software versions"
+                loading="lazy"
+              >
+    
+              <figcaption>
+                Scan results summarize vulnerabilities, available updates, and
+                outdated applications.
+              </figcaption>
+            </figure>
+    
+            <figure class="demo-image-secondary">
+              <img
+                src="assets/demo/cve-confirmation.png"
+                alt="KeyTrain confirmed and unconfirmed CVE findings"
+                loading="lazy"
+              >
+            </figure>
+    
           </div>
+    
+        </article>
+    
+    
+        <!-- DEMO 2: PHISHING -->
+    
+        <article class="demo-feature demo-feature-reverse reveal">
+    
+          <div class="demo-feature-copy">
+    
+            <p class="demo-label">Email Security</p>
+    
+            <h3>Phishing Detection and Simulation</h3>
+    
+            <p>
+              KeyTrain analyzes suspicious email activity while KeyTrain Learning
+              allows administrators to create and review phishing simulation
+              campaigns.
+            </p>
+    
+            <ul class="demo-check-list">
+              <li>Suspicious keyword detection</li>
+              <li>Sender and reply-to mismatch detection</li>
+              <li>Business email compromise indicators</li>
+              <li>Phishing simulation campaigns</li>
+              <li>Recipient and campaign-result tracking</li>
+            </ul>
+    
+          </div>
+    
+          <div class="demo-image-stack">
+    
+            <figure class="demo-image-primary">
+              <img
+                src="assets/demo/phishing-simulation.png"
+                alt="KeyTrain Learning phishing simulation campaign and detected phishing alerts"
+                loading="lazy"
+              >
+    
+              <figcaption>
+                Administrators can conduct simulations while KeyTrain identifies
+                suspicious email activity on protected hosts.
+              </figcaption>
+            </figure>
+    
+            <figure class="demo-image-secondary demo-image-right">
+              <img
+                src="assets/demo/email-ioc.png"
+                alt="KeyTrain email indicators of compromise"
+                loading="lazy"
+              >
+            </figure>
+    
+          </div>
+    
+        </article>
+    
+    
+        <!-- DEMO 3: RAILNET -->
+    
+        <article class="demo-feature reveal">
+    
+          <div class="demo-feature-copy">
+    
+            <p class="demo-label">Shared Threat Intelligence</p>
+    
+            <h3>Push and Pull with RailNet</h3>
+    
+            <p>
+              RailNet connects local KeyTrain hosts with centralized intelligence.
+              Hosts can push security events and reports, then pull newly approved
+              signatures back into the local application.
+            </p>
+    
+            <ul class="demo-check-list">
+              <li>Secure organization and host connection</li>
+              <li>Host-report uploads</li>
+              <li>Central signature review and approval</li>
+              <li>Approved-signature downloads</li>
+              <li>Organization-specific synchronization</li>
+            </ul>
+    
+          </div>
+    
+          <div class="railnet-demo-grid">
+    
+            <figure>
+              <div class="image-badge">Push</div>
+    
+              <img
+                src="assets/demo/railnet-push.png"
+                alt="KeyTrain pushing host reports and event batches to RailNet"
+                loading="lazy"
+              >
+    
+              <figcaption>
+                Host activity and report batches are pushed to the RailNet portal.
+              </figcaption>
+            </figure>
+    
+            <figure>
+              <div class="image-badge">Pull</div>
+    
+              <img
+                src="assets/demo/railnet-pull.png"
+                alt="KeyTrain pulling approved signatures from RailNet"
+                loading="lazy"
+              >
+    
+              <figcaption>
+                Newly approved signatures are pulled back to the protected host.
+              </figcaption>
+            </figure>
+    
+          </div>
+    
+        </article>
+    
+    
+        <!-- DEMO 4: QUESTIONS -->
+    
+        <article class="demo-feature demo-feature-reverse reveal">
+    
+          <div class="demo-feature-copy">
+    
+            <p class="demo-label">Human Risk</p>
+    
+            <h3>Targeted Security Questions</h3>
+    
+            <p>
+              KeyTrain delivers security questions connected to relevant risk
+              domains and provides immediate feedback so users understand why an
+              answer is correct.
+            </p>
+    
+            <ul class="demo-check-list">
+              <li>Domain-based security questions</li>
+              <li>Difficulty-based question delivery</li>
+              <li>Immediate answer feedback</li>
+              <li>Plain-English explanations</li>
+              <li>Training results incorporated into risk insight</li>
+            </ul>
+    
+          </div>
+    
+          <figure class="demo-single-image">
+    
+            <img
+              src="assets/demo/security-questions.png"
+              alt="KeyTrain targeted security question with answer feedback"
+              loading="lazy"
+            >
+    
+            <figcaption>
+              Questions reinforce the security concepts connected to technical and
+              human-risk findings.
+            </figcaption>
+    
+          </figure>
+    
+        </article>
+    
+    
+        <!-- ADDITIONAL SCREENSHOTS -->
+    
+        <div class="platform-gallery-heading centered reveal">
+    
+          <p class="eyebrow">More Platform Capabilities</p>
+    
+          <h3>One interface for visibility, detection, response, and improvement.</h3>
+    
         </div>
-
-        <details class="original-diagram reveal">
-          <summary>View the original presentation diagrams</summary>
-          <div class="diagram-grid">
-            <figure><img src="assets/keytrain-data-flow.png" alt="Original KeyTrain high-level data flow diagram"><figcaption>High-level data flow</figcaption></figure>
-            <figure><img src="assets/railnet-overview.png" alt="Original RailNet architecture diagram"><figcaption>RailNet overview</figcaption></figure>
-          </div>
-        </details>
+    
+        <div class="platform-gallery">
+    
+          <figure class="gallery-card reveal">
+            <img
+              src="assets/demo/home-screen.png"
+              alt="KeyTrain home screen showing security status and system health"
+              loading="lazy"
+            >
+    
+            <figcaption>
+              <strong>Security Status</strong>
+              <span>Clear posture and system-health visibility.</span>
+            </figcaption>
+          </figure>
+    
+          <figure class="gallery-card reveal">
+            <img
+              src="assets/demo/alert-popup.png"
+              alt="KeyTrain security alert with resolution actions"
+              loading="lazy"
+            >
+    
+            <figcaption>
+              <strong>Alert Investigation</strong>
+              <span>Review, prevent, and resolve detected activity.</span>
+            </figcaption>
+          </figure>
+    
+          <figure class="gallery-card reveal">
+            <img
+              src="assets/demo/security-analytics.png"
+              alt="KeyTrain security analytics dashboard"
+              loading="lazy"
+            >
+    
+            <figcaption>
+              <strong>Security Analytics</strong>
+              <span>Threat trends, categories, and security-health metrics.</span>
+            </figcaption>
+          </figure>
+    
+          <figure class="gallery-card reveal">
+            <img
+              src="assets/demo/cve-details.png"
+              alt="Detailed KeyTrain CVE findings"
+              loading="lazy"
+            >
+    
+            <figcaption>
+              <strong>CVE Details</strong>
+              <span>Prioritized vulnerability findings and context.</span>
+            </figcaption>
+          </figure>
+    
+          <figure class="gallery-card reveal">
+            <img
+              src="assets/demo/patch-management.png"
+              alt="KeyTrain patch-management scanning process"
+              loading="lazy"
+            >
+    
+            <figcaption>
+              <strong>System Scanning</strong>
+              <span>Software, CVE, update, and old-version checks.</span>
+            </figcaption>
+          </figure>
+    
+          <figure class="gallery-card reveal">
+            <img
+              src="assets/demo/email-ioc.png"
+              alt="KeyTrain suspicious email alerts"
+              loading="lazy"
+            >
+    
+            <figcaption>
+              <strong>Email Intelligence</strong>
+              <span>Phishing and suspicious-message indicators.</span>
+            </figcaption>
+          </figure>
+    
+        </div>
+    
       </div>
     </section>
-
     <section class="section section-light churches" id="churches" data-section="Churches">
       <div class="shell">
         <div class="section-heading reveal">
